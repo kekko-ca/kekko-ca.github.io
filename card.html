@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>Kekko Card</title>
+<title>kekko card</title>
 <style>
   :root { color-scheme: light; }
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -50,7 +50,7 @@
       const line = raw.trim();
       if (!line) continue;
       if (!nameDone) { html += '<h1>' + esc(line) + '</h1>'; nameDone = true; continue; }
-      if (line === '— Kekko') { html += '<div class="brand">Kekko</div>'; continue; }
+      if (line === '— kekko' || line === '— Kekko') { html += '<div class="brand">kekko</div>'; continue; }
       const m = line.match(/^\[(.+)\]$/);
       if (m) { html += '<div class="header">' + esc(m[1]) + '</div>'; continue; }
       if (line.startsWith('⚠')) {
